@@ -1,0 +1,20 @@
+<html>
+<body>
+<form>
+Web Address/URL <input type="text" id="url">
+<input type="button" value="Go" onclick="onPressGo()"><br>
+<input type="button" value="Back" name="b2">   <input type="button" value="Next" name="b3"><br>
+
+
+</form>
+<script language="javascript">
+
+ function onPressGo()
+{
+	var x=document.getElementById("url").value;
+	window.open(x);
+	}
+</script>
+
+</body>
+</html>

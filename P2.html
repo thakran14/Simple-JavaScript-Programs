@@ -1,0 +1,27 @@
+<html>
+<body>
+<div id="playground">
+
+<form>
+<p>Highlight keywords as you type: <input id="keywords" size="24"></p>
+</form>
+
+<p> We are the students of Computer science. We use computers all day and study new technologies like cloud computing, artificial intelligence, cyber security and cryptocurrency..</p>
+
+</div>
+
+<script src="hilitor.js"></script>
+<script>
+
+  window.addEventListener("DOMContentLoaded", function(e) {
+    var myHilitor2 = new Hilitor("playground");
+    myHilitor2.setMatchType("left");
+    document.getElementById("keywords").addEventListener("keyup", function(e) {
+      myHilitor2.apply(this.value);
+    }, false);
+  }, false);
+
+
+</script>
+</body>
+</html>
